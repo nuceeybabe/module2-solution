@@ -1,1 +1,52 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+}
+
+.section-content {
+    position: relative;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .section {
+        flex: 1;
+    }
+}
 
